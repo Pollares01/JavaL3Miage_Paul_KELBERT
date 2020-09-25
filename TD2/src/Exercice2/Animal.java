@@ -16,4 +16,20 @@ public abstract class Animal {
         this.poids = poids;
         this.sexe = sexe;
     }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public TypeAnimal getType() {
+        return type;
+    }
+
+    public double getPoids() {
+        return poids;
+    }
+
+    public boolean isSexe() {
+        return sexe;
+    }
 }
