@@ -1,5 +1,6 @@
 package Exo2;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedHashMap;
@@ -48,7 +49,9 @@ public class Main {
                 .collect(
                         toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2,
                                 LinkedHashMap::new));
-        System.out.println(sorted);
+        System.out.println("Map non triée : \n" + r.getOutput_map());
+        System.out.println();
+        System.out.println("Map triée : \n" + sorted);
     }
 
 }
