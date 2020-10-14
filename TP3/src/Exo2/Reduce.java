@@ -1,9 +1,6 @@
 package Exo2;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
+import java.util.*;
 public class Reduce extends Thread {
 
     private ArrayList<Map<String, Integer>> input_list;

@@ -21,16 +21,14 @@ public class Mapping extends Thread {
         String[] decoupe = this.input_string.split(" ");
 
 
-        int length = decoupe.length;
 
+        int length = decoupe.length;
         ArrayList<String> arrayList = new ArrayList<String> ();
         for (int i = 0; i < length; ++i) {
             arrayList.add (decoupe[i]);
         }
-
-// Tri
-        Collections.sort (arrayList);
-
+        Collections.sort(arrayList);
+//        System.out.println(arrayList);
         String [] sortedArray = new String [length];
         for (int i = 0; i < length; ++i) {
             sortedArray [i] = arrayList.get (i);
@@ -52,8 +50,11 @@ public class Mapping extends Thread {
             i = j;
         }
         this.output_map.remove("");
-//        System.out.println(output_map);
     }
+
+
+
+
 
     public Map<String, Integer> getOutput_map() {
         return output_map;
